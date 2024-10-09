@@ -1,0 +1,273 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #f7f7f7;
+  /* --accent-color: #007bff; */
+  --accent-color: #333;
+  --text-color: #333333;
+  --subtle-text: #666666;
+  --border-color: #e0e0e0;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+  --font-primary: "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-heading: 32px;
+  --border-radius: 4px;
+  --box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* *, */
+/* *::before, */
+/* *::after { */
+/*     padding: 0, */
+/*     margin: 0, */
+/*     box-sizing: border-box; */
+/* } */
+
+/* Global Styles */
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-large);
+}
+
+p {
+  font-size: var(--font-size-base);
+  color: var(--subtle-text);
+  margin-bottom: var(--spacing-medium);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: darken(var(--accent-color), 10%);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container */
+  padding: 0 var(--spacing-medium); /* Adds some spacing on the sides */
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+button:hover {
+  /* background-color: darken(var(--accent-color), 10%); */
+  color: #6c757d;
+}
+
+/* Blog */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-large);
+}
+
+.blog-post {
+  padding: var(--spacing-medium);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--secondary-color);
+}
+
+.blog-post h2 {
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-small);
+}
+
+.blog-post p {
+  color: var(--subtle-text);
+}
+
+/* Project */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-large);
+}
+
+.project-card {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.project-card h2 {
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-small);
+}
+
+.project-card p {
+  color: var(--subtle-text);
+}
+
+.project-card .btn {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+.project-card .btn:hover {
+  /* background-color: darken(var(--accent-color), 10%); */
+  /* background-color: #6c757d; */
+  opacity: 0.8;
+}
+
+/* Contact.css */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-medium);
+}
+
+.contact-container h1 {
+  font-size: var(--font-size-heading);
+  margin-bottom: var(--spacing-medium);
+}
+
+.contact-container p {
+  font-size: var(--font-size-base);
+  color: var(--subtle-text);
+  margin-bottom: var(--spacing-large);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column; /* Stack the links */
+  align-items: center; /* Center align */
+}
+
+.social-link {
+  margin: var(--spacing-small) 0; /* Vertical spacing between links */
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none; /* Remove underline */
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+  /* background-color: darken(var(--accent-color), 10%); */
+  background-color: #6c757d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--spacing-medium);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: var(--spacing-small);
+  padding: var(--spacing-small);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.contact-form button {
+  padding: var(--spacing-small);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  /* background-color: darken(var(--accent-color), 10%); */
+  /* background-color: #6c757d; */
+  opacity: 0.8;
+}
+
+/* NotFoud */
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  color: var(--text-color); /* Use your theme colors */
+  background-color: var(--secondary-color); /* Light background */
+  padding: var(--spacing-large);
+}
+
+.not-found h1 {
+  font-size: 3rem; /* Adjust font size for emphasis */
+  margin-bottom: var(--spacing-medium);
+}
+
+.not-found p {
+  font-size: var(--font-size-base);
+  color: var(--subtle-text); /* Subtle text color */
+  margin-bottom: var(--spacing-large);
+}
+
+.not-found .btn {
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from link */
+  transition: background-color 0.3s ease;
+}
+
+.not-found .btn:hover {
+  /* background-color: darken(var(--accent-color), 10%); */
+  /* background-color: #6c757d; */
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+}
