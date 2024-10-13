@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Logo from "./Logo";
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -9,13 +9,6 @@ const NavbarContainer = styled.nav`
   padding: 20px 40px;
   background-color: #333;
   color: #fff;
-`;
-
-const LogoContainer = styled.div`
-  width: 120px;
-  height: 40px;
-  background-color: #e0e0e0;
-  border-radius: 4px; /* Placeholder for logo */
 `;
 
 const NavLinks = styled.ul`
@@ -40,7 +33,7 @@ const NavLink = styled(Link)`
 function Navbar() {
     return (
         <NavbarContainer>
-            <LogoContainer /> {/* Placeholder for logo */}
+            <Logo />
             <NavLinks>
                 <NavLink to="/">home</NavLink>
                 <NavLink to="/blog">blog</NavLink>
