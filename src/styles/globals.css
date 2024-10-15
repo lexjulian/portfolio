@@ -58,7 +58,7 @@ a:hover {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto; /* Centers the container */
   padding: 0 var(--spacing-medium); /* Adds some spacing on the sides */
 }
