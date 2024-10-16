@@ -16,11 +16,26 @@ function Projects() {
       link: "/project/weather-app"
     },
     // Add more projects here...
+    {
+      id: 3,
+      title: "JavaScript Weather App",
+      image: "https://via.placeholder.com/300x200", // Add your own image
+      description: "A simple weather application that fetches data from an API.",
+      link: "/project/weather-app"
+    },
+    {
+      id: 4,
+      title: "JavaScript Weather App",
+      image: "https://via.placeholder.com/300x200", // Add your own image
+      description: "A simple weather application that fetches data from an API.",
+      link: "/project/weather-app"
+    },
+
   ];
 
   return (
     <div className="container">
-      <h1>Projects</h1>
+      <h1 className="title">Projects</h1>
       <div className="project-grid">
         {projects.map((project) => (
           <div key={project.id} className="project-card">

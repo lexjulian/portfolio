@@ -31,7 +31,7 @@ const Contact = () => {
 
     return (
         <div className="container">
-            <h1>Contact Me</h1>
+            <h1 className="title">Contact</h1>
             <p>Feel free to reach out to me through any of the platforms below:</p>
             <div className="social-links">
                 <a
