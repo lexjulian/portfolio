@@ -56,6 +56,11 @@ a:hover {
   color: darken(var(--accent-color), 10%);
 }
 
+.title {
+    display: inline-block;
+    border-bottom: 3px solid #3f3c3c;
+}
+
 .container {
   width: 100%;
   max-width: 1100px;
