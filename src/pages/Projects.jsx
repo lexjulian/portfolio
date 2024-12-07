@@ -3,32 +3,32 @@ function Projects() {
   const projects = [
     {
       id: 1,
-      title: "React Portfolio Website",
+      title: "Project Container",
       image: "https://via.placeholder.com/300x200", // Add your own image
-      description: "A modern portfolio website built with React, showcasing various projects.",
-      link: "/project/react-portfolio"
+      description: "Enter the project description",
+      link: "/project/sample-project"
     },
     {
       id: 2,
-      title: "JavaScript Weather App",
+      title: "Project Container",
       image: "https://via.placeholder.com/300x200", // Add your own image
-      description: "A simple weather application that fetches data from an API.",
-      link: "/project/weather-app"
+      description: "Enter the project description",
+      link: "/project/sample-project"
     },
     // Add more projects here...
     {
       id: 3,
-      title: "JavaScript Weather App",
+      title: "Project Container",
       image: "https://via.placeholder.com/300x200", // Add your own image
-      description: "A simple weather application that fetches data from an API.",
-      link: "/project/weather-app"
+      description: "Enter the project description",
+      link: "/project/sample-project"
     },
     {
       id: 4,
-      title: "JavaScript Weather App",
+      title: "Project Container",
       image: "https://via.placeholder.com/300x200", // Add your own image
-      description: "A simple weather application that fetches data from an API.",
-      link: "/project/weather-app"
+      description: "Enter the project description",
+      link: "/project/sample-project"
     },
 
   ];
